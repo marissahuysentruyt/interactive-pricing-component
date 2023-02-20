@@ -1,0 +1,12 @@
+# System Requirements
+.DS_Store
+
+# Node modules
+node_modules/
+
+# SCSS
+*.css.map
+*.css
+
+# compiled css
+dist/
