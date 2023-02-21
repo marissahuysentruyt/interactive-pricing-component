@@ -1,0 +1,6 @@
+# Compiled files
+dist
+
+# SCSS
+*.css.map
+*.css
