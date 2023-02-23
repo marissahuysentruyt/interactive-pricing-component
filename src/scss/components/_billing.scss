@@ -1,0 +1,37 @@
+.info-card__billing {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  gap: 0.5rem;
+  // container: billing / block;
+
+  &-choice {
+    // border: 1px solid red;
+    color: var(--text);
+    font-size: 0.75rem;
+    margin: 0;
+
+    @media (min-width: 40rem) {
+
+    }
+  }
+
+  &-discount {
+    margin: 0;
+    color: var(--discount-text);
+    background-color: var(--discount-background);
+    font-size: 0.75rem;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    // border: 1px solid red;
+    position: relative;
+    z-index: 0;
+
+    @media (min-width: 40rem) {
+      display: flex;
+      gap: 0.125rem;
+  }
+  }
+}

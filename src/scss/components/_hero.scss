@@ -1,0 +1,43 @@
+.hero {
+  padding: 2.5rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+  &::after {
+    content: "";
+    width: 10rem;
+    height: 10rem;
+    background-image: url("../images/pattern-circles.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    left: calc(50% - 5rem);
+    top: 1.5rem;
+  }
+
+  &__heading {
+    font-family: var(--font);
+    font-weight: var(--extra-bold);
+    letter-spacing: 0.02rem;
+    font-size: 1.5rem;
+    color: var(--cta-background);
+
+    @media (min-width: 48rem) {
+      font-size: 2.25rem;
+    }
+  }
+
+  &__subheading {
+    font-family: var(--font);
+    font-weight: var(--semi-bold);
+    font-size: 1.25rem;
+    color: var(--text);
+
+    @media (min-width: 48rem) {
+      font-size: 1.5rem;
+    }
+  }
+}

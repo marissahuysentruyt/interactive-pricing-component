@@ -1,0 +1,29 @@
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 1.25rem;
+  background: url("../images/bg-pattern.svg")
+              var(--main-background);
+  background-size: 100% 25vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 48rem) {
+    padding: 3rem;
+  }
+
+  @media (min-width: 80rem) {
+    background-size: cover;
+    max-width: 80rem;
+    margin: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}

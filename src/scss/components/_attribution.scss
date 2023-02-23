@@ -1,3 +1,13 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+  font-size: 0.75rem; // 12px
+  text-align: center;
 
-.attribution a { color: hsl(228, 45%, 44%); }
+  a {
+    color: hsl(228deg 45% 44%);
+    transition: all ease-in-out 150ms;
+
+    &:hover {
+      font-weight: var(--extra-bold);
+    }
+  }
+}

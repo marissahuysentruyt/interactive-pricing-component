@@ -1,0 +1,13 @@
+.hidden {
+  display: none;
+
+  // @container billing (width > 30rem) {
+  //   .hidden {
+  //     display: block;
+  //   }
+  // }
+
+  @media (min-width: 40rem) {
+      display: block;
+  }
+}

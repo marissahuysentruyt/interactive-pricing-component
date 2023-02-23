@@ -1,0 +1,13 @@
+:root {
+  --cmp-background: hsl(0deg 0% 100%); // White (Pricing Component Background)
+  --main-background: hsl(230deg 100% 99%); // Very Pale Blue (Main Background)
+  --empty-slider: hsl(224deg 65% 95%); // Light Grayish Blue (Empty Slider Bar)
+  --full-slider: hsl(174deg 77% 80%); // Soft Cyan (Full Slider Bar)
+  --slider-background: hsl(174deg 86% 45%); // Strong Cyan (Slider Background)
+  --toggle-background: hsl(223deg 50% 87%); // Light Grayish Blue (Toggle Background)
+  --text: hsl(225deg 20% 60%); // Grayish Blue (Text)
+  --cta-text: hsl(226deg 100% 87%); // Pale Blue (CTA Text)
+  --cta-background: hsl(227deg 35% 25%); // Dark Desaturated Blue (Text & CTA Background)
+  --discount-background: hsl(14deg 92% 95%); // Light Grayish Red (Discount Background)
+  --discount-text: hsl(15deg 100% 70%); // Light Red (Discount Text)
+}

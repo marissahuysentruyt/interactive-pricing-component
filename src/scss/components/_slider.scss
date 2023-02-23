@@ -1,0 +1,87 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  
+  @media (min-width: 48rem) {
+    grid-area: slider;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-within::-webkit-slider-thumb {
+    outline: 2px solid var(--cta-background);
+    outline-offset: 0.125rem;
+  }
+
+  &:focus-within::-moz-range-thumb {
+    outline: 2px solid var(--cta-background);
+    outline-offset: 0.125rem;
+  }
+}
+
+input[type="range" i]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  background-color: var(--slider-background);
+  background-image: url("../images/icon-slider.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2.25rem;
+  width: 2.25rem;
+  // center the thumb slider on the track
+  margin-top: calc((0.5rem / 2) - (2.25rem / 2));
+  box-shadow: 0px 1.5rem 2rem 0.5rem var(--full-slider);
+
+  &:active {
+    cursor: grabbing;
+    background-color: hsl(174deg 86% 35%);
+  }
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--slider-background);
+  background-image: url("../images/icon-slider.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2.25rem;
+  width: 2.25rem;
+  box-shadow: 0px 1.5rem 2rem 0.5rem var(--full-slider);
+  
+
+  &:active {
+    cursor: grabbing;
+    background-color: hsl(174deg 86% 35%);
+  }
+}
+
+input[type="range" i]::-webkit-slider-runnable-track {
+  background: var(--empty-slider);
+  height: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: var(--empty-slider);
+  border-radius: 1rem;
+  height: 0.5rem;
+  border: none;
+}
+
+input[type="range"]::-moz-range-progress {
+  background-color: var(--full-slider);
+  border-radius: 1rem;
+  height: 0.5rem;
+}

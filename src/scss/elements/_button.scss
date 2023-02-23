@@ -1,0 +1,13 @@
+button {
+  background-color: var(--cta-background);
+  color: var(--cta-text);
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  width: 50%;
+  transition: all ease-in-out 150ms;
+
+  &:hover {
+    color: var(--cmp-background);
+  }
+}

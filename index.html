@@ -10,43 +10,50 @@
   </head>
   <body>
     <main>
-      <h1 class="hero__heading">
-        Simple, traffic-based pricing
-      </h1>
-      <h2 class="hero__subheading">
-        Sign-up for our 30-day trial. No credit card required.
-      </h2>
+      <section class="hero">
+        <h1 class="hero__heading">
+          Simple, traffic-based pricing
+        </h1>
+        <h2 class="hero__subheading">
+          Sign-up for our 30-day trial. No credit card required.
+        </h2>
+      </section>
        
-      <section class="info-card">
-        <h3 class="info-card__pageviews">
-          <span class="js-pageviews">{js-pageviews}</span>Pageviews
-        </h3>
-        <input type="range" step="1" min="5" max="25" value="16">
-        <h3 class="info-card__price">
-          $<span class="js-input-value">{js-input-value}</span>/month
-        </h3>
-      </section>
-      
-    
-      <section class="info-card__billing">
-        <h3>Monthly Billing</h3>
-        <div class=" info-card__toggle form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-        </div>
-        <h3>Yearly Billing</h3>
-        <h4>25% discount</h4>
-      </section>
-
-      <section class="info-card__perks">
-        <ul class="perks__list">
-          <li>Unlimited websites</li>
-          <li>100% data ownership</li>
-          <li>Email reports</li>
-        </ul>
-        <button>Start my trial</button>
-      </section>
-
+      <div class="info-container">
+        <section class="info-card">
+          <h3 class="info-card__pageviews">
+            <span class="js-pageviews"></span>Pageviews
+          </h3>
+          <label class="info-card__slider" for="slider-input"></label>
+          <input type="range" step="1" min="5" max="25" id="slider-input">
+          <h3 class="info-card__price">
+            <span class="change-color">$</span><span class="js-input-value"></span>/month
+          </h3>
+        </section>
+        
+        <section class="info-card__billing">
+          <div class="centered">
+            <h3 class="info-card__billing-choice">Monthly Billing</h3>
+            <div class=" info-card__toggle form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault" aria-hidden="false">Switch for Monthly or Yearly Billing</label>
+            </div>
+            <h3 class="info-card__billing-choice">Yearly Billing</h3>
+          </div>
+          <h4 class="info-card__billing-discount">
+            25%<span class="hidden">discount</span>
+          </h4>
+        </section>
+  
+        <section class="info-card__perks">
+          <ul class="perks__list">
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button>Start my trial</button>
+        </section>
+      </div>
     </main>
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

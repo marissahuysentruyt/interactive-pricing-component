@@ -3,14 +3,28 @@
 // TOOLS
 
 // GENERICS
+@use "./generics/resets";
+@use "./generics/fonts";
+@use "./generics/colors";
 
 // ELEMENTS
+@use "./elements/button";
 
 // OBJECTS/LAYOUT
 
 // COMPONENTS
-@use './components/attribution';
+@use "./components/infoContainer";
+@use "./components/attribution";
+@use "./components/hero";
+@use "./components/billing";
+@use "./components/infoCard";
+@use "./components/perks";
+@use "./components/slider";
+@use "./components/toggleSwitch";
 
 // VENDORS
 
 // UTILITIES
+@use "./utilities/changeColor";
+@use "./utilities/hidden";
+@use "./utilities/centered";

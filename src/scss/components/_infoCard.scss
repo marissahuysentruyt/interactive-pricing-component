@@ -1,0 +1,46 @@
+.info-card {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font);
+
+  @media (min-width: 48rem) {
+    display: grid;
+    grid-template-areas: 
+      "pageviews price"
+      "slider slider"
+    ;
+  }
+
+  &__pageviews {
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    color: var(--text);
+    font-size: 1rem;
+
+    @media (min-width: 48rem) {
+      grid-area: pageviews;
+      text-align: center;
+    }
+  }
+
+  &__price {
+    color: var(--text);
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+
+    @media (min-width: 48rem) {
+      grid-area: price;
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+
+  .js-input-value {
+    color: var(--cta-background);
+    font-size: 1.5rem;
+    padding-right: 0.25rem;
+  }
+}
