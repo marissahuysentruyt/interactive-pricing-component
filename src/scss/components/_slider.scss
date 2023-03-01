@@ -33,7 +33,7 @@ input[type="range" i]::-webkit-slider-thumb {
   background-color: var(--slider-background);
   background-image: url("../images/icon-slider.svg");
   background-position: center;
-  background-size: contain;
+  background-size: 50%;
   background-repeat: no-repeat;
   height: 2.25rem;
   width: 2.25rem;
@@ -53,7 +53,7 @@ input[type="range"]::-moz-range-thumb {
   background-color: var(--slider-background);
   background-image: url("../images/icon-slider.svg");
   background-position: center;
-  background-size: contain;
+  background-size: 50%;
   background-repeat: no-repeat;
   height: 2.25rem;
   width: 2.25rem;
