@@ -1,24 +1,27 @@
 import "./scss/global.scss";
 
-const pageviewCount = document.querySelector(".js-pageviews");
-const pagesPerDollar = 6250;
-
-const calculatePageviews = (dollars) => {
-  return dollars * pagesPerDollar;
+const pagesAndPrices = {
+  views: ["10K", "50K", "100K", "500K", "1M"],
+  prices: [8, 12, 16, 24, 36]
 };
 
 const inputSlider = document.querySelector("input[type='range']");
-let price = inputSlider.value;
-pageviewCount.innerHTML = calculatePageviews(price);
+// line 10 will set the max attr for the range input, that way if the pagesAndPrices object gets updated, the max gets updated automatically
+inputSlider.setAttribute("max", ((pagesAndPrices).views).length - 1);
+const pageviewCount = document.querySelector(".js-pageviews");
+let price = pagesAndPrices.prices[inputSlider.value];
+pageviewCount.innerHTML = pagesAndPrices.views[inputSlider.value];
 const spanPriceDisplay = document.querySelector(".js-input-value");
 spanPriceDisplay.innerHTML = price;
+
 const discountedPriceDisplay = document.querySelector(".js-discount-value");
 const discountToggle = document.querySelector("input[type='checkbox'");
 const discount = 0.25;
 discountToggle.checked = false;
 
 const applyDiscount = (price) => {
-  return (price * (1 - discount));
+  const convertedPrice = pagesAndPrices.prices[price];
+  return (convertedPrice * (1 - discount));
 };
 
 const createNewPrice = (price) => {
@@ -51,18 +54,9 @@ discountToggle.addEventListener("input", function() {
   }
 });
 
-const getInputValue = (inputValue) => {
-  return inputValue;
-};
-
 inputSlider.addEventListener("input", function(e) {
   return (
-    spanPriceDisplay.innerHTML = getInputValue(e.target.value)
-  );
-});
-
-inputSlider.addEventListener("change", function(e) {
-  return (
-    pageviewCount.innerHTML = calculatePageviews(e.target.value)
+    spanPriceDisplay.innerHTML = pagesAndPrices.prices[e.target.value],
+    pageviewCount.innerHTML = pagesAndPrices.views[e.target.value]
   );
 });
