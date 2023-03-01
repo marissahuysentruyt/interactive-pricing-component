@@ -1,24 +1,5 @@
 import "./scss/global.scss";
 
-// TODO: follow prompt!! 😆
-// validation somehow to return the matching values from table above
-// const pageviewDisplay = document.querySelector(".js-pageviews");
-const pagesAndPrices = {
-  "8": "10K",
-  "12": "50K",
-  "16": "100K",
-  "24": "500K",
-  "36": "1M"
-};
-// const inputSlider = document.querySelector("input[type='range']");
-// const sliderInputs = Object.keys(pagesAndPrices);
-// const price = sliderInputs[inputSlider.current];
-// pageviewDisplay.innerText = pagesAndPrices[`${price}`];
-// const spanPriceDisplay = document.querySelector(".js-input-value");
-// spanPriceDisplay.innerHTML = price;
-
-// can you add or modify the step attribute?
-
 const pageviewCount = document.querySelector(".js-pageviews");
 const pagesPerDollar = 6250;
 
